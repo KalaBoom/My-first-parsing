@@ -27,7 +27,7 @@ def get_catalog(tag, url, key): # Получение каталога html ст�
 
 def main():  # Парсинг
 
-  author = get_catalog('h3', url + '/authors', name_author)
+ 	author = get_catalog('h3', url + '/authors', name_author)
 	verse = get_catalog('a', url + author, verse_name)
 	div =  get_catalog('div', url + verse, "poem-text")
 	print(div)
